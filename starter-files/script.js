@@ -11,3 +11,13 @@ const API_ENDPOINT = 'https://yesno.wtf/api';
  * 5. Optional: add loading/error states
  *
  */
+
+let answer = document.getElementById("answer");
+let button = document.getElementById("button");
+
+button.addEventListener("click", fetchAnswer);
+
+function fetchAnswer() {
+  answer = fetch(API_ENDPOINT.get())
+
+}
